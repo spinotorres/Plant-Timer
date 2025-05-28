@@ -3,7 +3,7 @@
   "productName": "plant-timer",
   "version": "1.0.0",
   "description": "This app helps you remember to water your plants with the help of a timer.",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
