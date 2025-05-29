@@ -10,6 +10,6 @@ function button_info() {
   }
 }
 
-function title() {
+function button_title() {
   window.location.href = "main.html";
 }

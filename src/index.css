@@ -43,7 +43,7 @@ header {
   padding: 10px;
 }
 
-.title {
+.button_title {
   position: fixed;
   top: 55%;
   left: 55%;
@@ -55,10 +55,10 @@ header {
   background-color: transparent;
   transition: all 0.15;
 }
-.title:hover {
+.button_title:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.title:active {
+.button_title:active {
   opacity: 0.8;
 }
