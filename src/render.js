@@ -1,6 +1,6 @@
 
 function button_info() {
-  const div = document.querySelector('.text-info');
+  const div = document.querySelector('.text_info');
 
   if (div.style.display === 'none' || div.style.display === '') {
     div.innerText = "This app is designed to remind the user to always water their plants!";
