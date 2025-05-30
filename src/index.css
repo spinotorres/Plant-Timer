@@ -7,7 +7,7 @@ header {
   align-items: end;
 }
 
-.button-info {
+.button_info {
   position: fixed;
   top: 2%;
   right: 2%;
@@ -18,15 +18,15 @@ header {
   color: #a04e02;
   transition: opacity 0.15s;
 }
-.button-info:hover {
+.button_info:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-.button-info:active {
+.button_info:active {
   opacity: 0.6;
 }
 
-.text-info {
+.text_info {
   display: none;
   background-color: rgba(9, 8, 13, 0.6);
   border-radius: 5px;
@@ -61,4 +61,40 @@ header {
 }
 .button_title:active {
   opacity: 0.8;
+}
+
+.button_menu_start,
+.button_menu_stop,
+.button_menu_reset {
+  position: fixed;
+  font-size: 30px;
+  font-family: "Tiny5", sans-serif;
+  border: none;
+  background-color: transparent;
+  color: #a04e02;
+  left: 75%;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.button_menu_start:hover,
+.button_menu_stop:hover,
+.button_menu_reset:hover {
+  color: coral;
+}
+.button_menu_start:active,
+.button_menu_stop:active,
+.button_menu_reset:active {
+  opacity: 0.6;
+}
+
+.button_menu_start {
+  top: 67%;
+}
+
+.button_menu_stop {
+  top: 72%;
+}
+
+.button_menu_reset {
+  top: 77%;
 }
