@@ -19,7 +19,7 @@ header {
   transition: opacity 0.15s;
 }
 .button_info:hover {
-  opacity: 0.8;
+  color: coral;
   cursor: pointer;
 }
 .button_info:active {
@@ -61,6 +61,15 @@ header {
 }
 .button_title:active {
   opacity: 0.8;
+}
+
+.container_timer_visor {
+  position: fixed;
+  top: 45%;
+  left: 57%;
+  font-size: 50px;
+  color: #313C39;
+  cursor: default;
 }
 
 .button_menu_start,
