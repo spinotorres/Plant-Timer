@@ -1,11 +1,18 @@
+html,
 body {
   background-image: url("../src/assets/frame-1.png");
   font-family: "Tiny5", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
   align-items: end;
 }
+
+/*-------------------------------------------------------------------------------------------*/
 
 .button_info {
   position: fixed;
@@ -63,6 +70,8 @@ header {
   opacity: 0.8;
 }
 
+/*-------------------------------------------------------------------------------------------*/
+
 .container_timer_visor {
   position: fixed;
   top: 45%;
@@ -72,38 +81,80 @@ header {
   cursor: default;
 }
 
-.button_menu_start,
-.button_menu_stop,
-.button_menu_reset {
+.button_set_timer,
+.button_start,
+.button_stop,
+.button_reset {
   position: fixed;
-  font-size: 30px;
+  font-size: 26px;
   font-family: "Tiny5", sans-serif;
   border: none;
   background-color: transparent;
   color: #a04e02;
-  left: 75%;
+  left: 73%;
   cursor: pointer;
   transition: opacity 0.15s;
 }
-.button_menu_start:hover,
-.button_menu_stop:hover,
-.button_menu_reset:hover {
+.button_set_timer:hover,
+.button_start:hover,
+.button_stop:hover,
+.button_reset:hover {
   color: coral;
 }
-.button_menu_start:active,
-.button_menu_stop:active,
-.button_menu_reset:active {
+.button_set_timer:active,
+.button_start:active,
+.button_stop:active,
+.button_reset:active {
   opacity: 0.6;
 }
 
-.button_menu_start {
+.button_set_timer {
+  width: 139px;
+  height: 31.5px;
   top: 67%;
 }
+.timer_visor.editing {
+  color: black;
+  animation: blink 1s step-start infinite;
+  cursor: pointer;
+}
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
 
-.button_menu_stop {
+.button_start {
   top: 72%;
 }
 
-.button_menu_reset {
+.button_stop {
   top: 77%;
+}
+
+.button_reset {
+  top: 82%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+footer {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  object-position: left;
+  font-size: 18px;
+}
+
+.autor_name {
+  padding-top: 15px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.social_midia {
+  text-decoration: none;
+  padding-bottom: 5px;
 }

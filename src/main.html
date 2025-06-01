@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <button onclick="button_info()" class="button_info">Info</button>
+      <button onclick="buttonInfo()" class="button_info">Info</button>
       <div class="text_info"></div>
     </header>
     <main>
@@ -19,9 +19,10 @@
         <p class="timer_visor">00:00:00</p>
       </div>
       <div class="container_buttons_menu">
-        <button class="button_menu_start">START</button>
-        <button class="button_menu_stop">STOP</button>
-        <button class="button_menu_reset">RESET</button>
+        <button onclick="buttonSetTimer()" class="button_set_timer">SET TIMER</button>
+        <button onclick="buttonStart()" class="button_start">START</button>
+        <button onclick="buttonStop()" class="button_stop">STOP</button>
+        <button onclick="buttonReset()" class="button_reset">RESET</button>
       </div>
     </main>
   </body>
